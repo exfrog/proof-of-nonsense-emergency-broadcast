@@ -37,3 +37,34 @@ test('unsafe cases fail closed', async () => {
   caseFile.safety.simulated = false;
   assert.ok(validateCase(caseFile).includes('demo case must be simulated'));
 });
+
+test('malformed broadcast content fails validation before rendering', async () => {
+  const mutations = [
+    ['missing comedy', (value) => { delete value.comedy; }],
+    ['null comedy', (value) => { value.comedy = null; }],
+    ['non-array jokes', (value) => { value.comedy.lines = 'not a list'; }],
+    ['empty jokes', (value) => { value.comedy.lines = []; }],
+    ['non-string joke', (value) => { value.comedy.lines[0] = {}; }],
+    ['sparse jokes', (value) => { value.comedy.lines = new Array(1); }],
+    ['blank joke', (value) => { value.comedy.lines[0] = '  '; }],
+    ['non-string fact', (value) => { value.market.facts[0] = null; }],
+    ['sparse facts', (value) => { value.market.facts = new Array(3); }],
+    ['blank fact', (value) => { value.market.facts[0] = '\n'; }],
+  ];
+  for (const [name, mutate] of mutations) {
+    const caseFile = await fixture();
+    mutate(caseFile);
+    const errors = validateCase(caseFile);
+    assert.ok(errors.length > 0, name);
+    assert.throws(() => buildBroadcast(caseFile), (error) => {
+      assert.equal(error.constructor, Error, name);
+      assert.equal(error.message, errors.join('; '), name);
+      return true;
+    });
+  }
+});
+
+test('array is not a case object even if assigned fixture properties', async () => {
+  const caseFile = Object.assign([], await fixture());
+  assert.deepEqual(validateCase(caseFile), ['case must be an object']);
+});
