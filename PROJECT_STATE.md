@@ -10,6 +10,7 @@ Proof of Nonsense: Bitcoin Emergency Broadcast System
 
 ## Built
 
+- Public collaboration repository: https://github.com/exfrog/proof-of-nonsense-emergency-broadcast
 - Static collaboration/demo shell.
 - Allowlisted `flame-demo-1` case.
 - Deterministic fact and comedy renderer.
@@ -34,7 +35,6 @@ Proof of Nonsense: Bitcoin Emergency Broadcast System
 ## Explicitly not done
 
 - No production deployment.
-- No public GitHub repository yet.
 - No collaborator invitations yet.
 - No live mempool.space request from this repository.
 - No invoice, payment, acceleration submission, signing, broadcast, or Bitcoin burn.
