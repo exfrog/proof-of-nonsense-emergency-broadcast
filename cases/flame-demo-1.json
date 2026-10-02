@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "id": "flame-demo-1",
+  "title": "The Great Experimental Combustion Incident",
+  "market": {
+    "provider": "Glimpse",
+    "source_url": "https://glimpse.money/",
+    "snapshot_kind": "frozen-public-demo-fixture",
+    "facts": [
+      "The market probability is public data frozen for a repeatable stage demo.",
+      "The displayed Flame output is an unsigned draft fixture, not a production transaction.",
+      "The mempool.space acceleration estimate is simulated and makes no network request."
+    ]
+  },
+  "flame": {
+    "status": "unmerged-draft",
+    "draft_pull_request": "https://github.com/runflame/flame-lib/pull/14",
+    "operation": "decode-only",
+    "display_value_sats": 2100
+  },
+  "accelerator": {
+    "mode": "simulation",
+    "provider": "mempool.space",
+    "estimated_bid_sats": 4200
+  },
+  "proof_of_nonsense": {
+    "upstream": "https://github.com/murdawkmedia/proof-of-nonsense",
+    "presenter": "goblin",
+    "language": "en",
+    "audio": "pending-collaborator-asset"
+  },
+  "comedy": {
+    "lines": [
+      "The Department of Experimental Combustion has confirmed that the button remains extremely unpressable.",
+      "The fee ambulance is standing by with a clipboard and absolutely no authority to spend your money.",
+      "Our goblin correspondent has reviewed the consensus document and reports that the vibes are still pending."
+    ]
+  },
+  "safety": {
+    "simulated": true,
+    "unsigned": true,
+    "payment_requested": false,
+    "burn_enabled": false,
+    "acceleration_submitted": false
+  }
+}
