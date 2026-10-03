@@ -1,16 +1,26 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "id": "flame-demo-1",
   "title": "The Great Experimental Combustion Incident",
   "market": {
     "provider": "Glimpse",
-    "source_url": "https://glimpse.money/",
+    "source_url": "https://www.glimpse.trading/",
     "snapshot_kind": "frozen-public-demo-fixture",
-    "facts": [
-      "The market probability is public data frozen for a repeatable stage demo.",
-      "The displayed Flame output is an unsigned draft fixture, not a production transaction.",
-      "The mempool.space acceleration estimate is simulated and makes no network request."
-    ]
+    "question": "Demo fixture: Will Bitcoin close above $100,000 on 31 October 2026?",
+    "snapshot_at": "2026-10-03T09:00:00Z",
+    "probability_percent": 62,
+    "facts": {
+      "en": [
+        "This is a frozen 62% demo probability, not a live market quote.",
+        "The Flame payload is an unsigned, decode-only draft fixture displaying 2,100 sats.",
+        "The 4,200 sat fee-ambulance estimate is simulated and made no network request."
+      ],
+      "de": [
+        "Dies ist eine eingefrorene Demo-Wahrscheinlichkeit von 62 %, kein Live-Marktkurs.",
+        "Die Flame-Nutzlast ist ein unsignierter, nur dekodierter Entwurf mit 2.100 Sats.",
+        "Die Gebührenambulanz-Schätzung von 4.200 Sats ist simuliert und stellte keine Netzwerkanfrage."
+      ]
+    }
   },
   "flame": {
     "status": "unmerged-draft",
@@ -21,21 +31,33 @@
   "accelerator": {
     "mode": "simulation",
     "provider": "mempool.space",
+    "source_url": "https://mempool.space/docs/api/rest",
     "estimated_bid_sats": 4200
   },
   "proof_of_nonsense": {
-    "upstream": "https://github.com/murdawkmedia/proof-of-nonsense",
-    "presenter": "goblin",
-    "language": "en",
-    "audio": "pending-collaborator-asset"
+    "presenter": "Goblin correspondent",
+    "languages": ["en", "de"],
+    "audio_status": "pending-approved-collaborator-asset"
   },
   "comedy": {
-    "lines": [
-      "The Department of Experimental Combustion has confirmed that the button remains extremely unpressable.",
+    "en": [
+      "The Department of Experimental Combustion confirms that the button remains extremely unpressable.",
       "The fee ambulance is standing by with a clipboard and absolutely no authority to spend your money.",
-      "Our goblin correspondent has reviewed the consensus document and reports that the vibes are still pending."
+      "Our goblin correspondent reviewed the consensus document and reports that the vibes are still pending."
+    ],
+    "de": [
+      "Das Amt für experimentelle Verbrennung bestätigt: Der Knopf bleibt außerordentlich undrückbar.",
+      "Der Gebührenrettungswagen wartet mit Klemmbrett und absolut keiner Befugnis, dein Geld auszugeben.",
+      "Unser Goblin-Korrespondent hat das Konsenspapier geprüft: Die Vibes sind weiterhin ausstehend."
     ]
   },
+  "integrations": [
+    { "id": "glimpse", "label": "Glimpse", "state": "FIXTURE" },
+    { "id": "flame", "label": "Flame", "state": "DRAFT" },
+    { "id": "accelerator", "label": "mempool.space", "state": "SIMULATED" },
+    { "id": "newsroom", "label": "Proof of Nonsense", "state": "FIXTURE" },
+    { "id": "broadcast", "label": "Emergency broadcast", "state": "READY" }
+  ],
   "safety": {
     "simulated": true,
     "unsigned": true,
