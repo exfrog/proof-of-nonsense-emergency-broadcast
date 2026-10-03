@@ -3,32 +3,84 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A safe, staged Bitcoin emergency broadcast demo where verified telemetry and authorized nonsense remain visibly separate.">
   <title>Proof of Nonsense — Bitcoin Emergency Broadcast System</title>
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
   <main>
-    <p class="eyebrow">PROOF OF NONSENSE PRESENTS</p>
-    <h1>Bitcoin Emergency Broadcast System</h1>
-    <p class="lede">A bilingual AI newsroom covers a probability market, investigates an experimental Flame “burn,” and dispatches the mempool.space fee ambulance—without burning, paying, or accelerating anything real.</p>
+    <header class="hero">
+      <p class="eyebrow">PROOF OF NONSENSE PRESENTS</p>
+      <h1>Bitcoin Emergency Broadcast System</h1>
+      <p class="lede">A bilingual goblin newsroom investigates a frozen probability, an experimental Flame draft, and a simulated mempool fee emergency—without spending, signing, burning, or accelerating anything real.</p>
+      <div class="safety-ribbon" id="safety-ribbon" aria-label="Safety status" hidden>
+        <span>SAFE DEMO</span><span>UNSIGNED</span><span>NO PAYMENT</span>
+      </div>
+    </header>
 
-    <section class="stack" aria-label="integration stack">
-      <article><b>Glimpse</b><span>Public probability facts</span></article>
-      <article><b>Proof of Nonsense</b><span>Bark-paid bilingual audio</span></article>
-      <article><b>Electrum</b><span>Transaction inspection</span></article>
-      <article><b>mempool.space</b><span>Fee ambulance</span></article>
-      <article><b>Flame</b><span>Draft-safe combustion lab</span></article>
+    <section class="control" aria-labelledby="control-title">
+      <div>
+        <p class="section-label">CONTROL ROOM / CASE FLAME-DEMO-1</p>
+        <h2 id="control-title">Consensus: vibes pending</h2>
+        <p id="status" role="status">Loading the public demo fixture…</p>
+      </div>
+      <button id="broadcast" type="button" disabled>START EMERGENCY BROADCAST</button>
     </section>
 
-    <section class="console">
-      <p id="status" role="status">Safety interlocks armed. Case: flame-demo-1.</p>
-      <button id="broadcast" type="button">TRIGGER EMERGENCY BROADCAST</button>
-      <div id="stage" aria-live="polite"></div>
+    <section class="pipeline-section" id="pipeline-section" aria-labelledby="pipeline-title" hidden>
+      <div class="section-heading">
+        <p class="section-label">EVIDENCE PIPELINE</p>
+        <h2 id="pipeline-title">Five systems. Zero financial authority.</h2>
+      </div>
+      <ol class="pipeline" id="pipeline">
+        <li data-stage="glimpse"><span class="step">01</span><div><b>Glimpse</b><span class="detail">Frozen market fixture</span></div><em>FIXTURE</em></li>
+        <li data-stage="flame"><span class="step">02</span><div><b>Flame</b><span class="detail">Draft-safe decode</span></div><em>DRAFT</em></li>
+        <li data-stage="accelerator"><span class="step">03</span><div><b>mempool.space</b><span class="detail">Fee ambulance simulation</span></div><em>SIMULATED</em></li>
+        <li data-stage="newsroom"><span class="step">04</span><div><b>Proof of Nonsense</b><span class="detail">Bilingual newsroom fixture</span></div><em>FIXTURE</em></li>
+        <li data-stage="broadcast"><span class="step">05</span><div><b>Emergency broadcast</b><span class="detail">Awaiting interlocks</span></div><em>READY</em></li>
+      </ol>
+    </section>
+
+    <section id="stage" class="stage" aria-labelledby="broadcast-title" hidden>
+      <div class="broadcast-header">
+        <div>
+          <p class="section-label">TRANSMISSION COMPLETE</p>
+          <h2 id="broadcast-title" tabindex="-1">Bitcoin emergency broadcast</h2>
+        </div>
+        <div class="language-switch" aria-label="Transcript language">
+          <button type="button" class="language active" data-language="en" aria-pressed="true">EN</button>
+          <button type="button" class="language" data-language="de" aria-pressed="false">DE</button>
+        </div>
+      </div>
+
+      <div class="telemetry" id="telemetry"></div>
+
+      <div class="transcript-grid">
+        <article class="facts-panel">
+          <p class="panel-kicker">FIXTURE-BACKED DEMO TELEMETRY</p>
+          <div id="facts"></div>
+        </article>
+        <article class="jokes-panel">
+          <p class="panel-kicker">AUTHORIZED NONSENSE</p>
+          <div id="jokes"></div>
+        </article>
+      </div>
+
+      <div class="audio-panel" role="group" aria-label="Audio status">
+        <div><span class="audio-icon" aria-hidden="true">◖))</span><div><b>Goblin broadcast audio</b><span>Approved collaborator asset pending · transcript demo is fully operational</span></div></div>
+        <span class="status-chip pending">PENDING</span>
+      </div>
+      <p id="signoff" class="signoff"></p>
     </section>
 
     <footer>
-      <p>Fixture-only collaboration shell. No wallet data, keys, invoices, raw transactions, or payment authority cross system boundaries.</p>
-      <a href="https://github.com/murdawkmedia/proof-of-nonsense">Upstream Proof of Nonsense</a>
+      <p>Public fixture only. No wallet data, keys, invoices, raw transactions, or payment authority cross system boundaries.</p>
+      <nav aria-label="Project sources">
+        <a href="https://github.com/exfrog/proof-of-nonsense-emergency-broadcast">Source repository</a>
+        <a href="https://www.glimpse.trading/">Glimpse</a>
+        <a href="https://github.com/runflame/flame-lib/pull/14">Flame draft PR</a>
+      </nav>
     </footer>
   </main>
   <script type="module" src="./src/app.mjs"></script>

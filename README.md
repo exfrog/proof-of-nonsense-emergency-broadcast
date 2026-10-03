@@ -1,57 +1,67 @@
 # Proof of Nonsense: Bitcoin Emergency Broadcast System
 
-An intentionally over-integrated hackathon control room: a bilingual AI newsroom covers a Bitcoin probability market, investigates an experimental Flame “burn,” and dispatches the mempool.space fee ambulance—while refusing to burn, pay, or accelerate anything real.
+An intentionally over-integrated hackathon control room: a bilingual goblin newsroom covers a frozen Bitcoin probability fixture, inspects an experimental Flame draft, and dispatches a simulated mempool.space fee ambulance—while refusing to burn, pay, sign, broadcast, or accelerate anything real.
 
-This repository is the shared orchestration and demo layer. It does **not** merge wallet code, credentials, or payment state from the component projects.
+This repository is the shared orchestration and stage-demo layer. It does **not** merge wallet code, credentials, or payment state from the component projects.
 
-## Current vertical slice
+## Working vertical slice
 
-The checked-in `flame-demo-1` case drives a runnable static broadcast page that:
+The allowlisted `flame-demo-1` case now drives a staged, evidence-bearing broadcast:
 
-- separates deterministic facts from fictional jokes;
-- represents Glimpse, Proof of Nonsense, Electrum, mempool.space, and Flame as bounded components;
-- fails closed unless the fixture is simulated, unsigned, non-paying, non-burning, and non-accelerating;
-- contains no txid, raw transaction, address, wallet label, seed, xpub, private key, or invoice.
+1. A frozen Glimpse-style market fixture shows its question, timestamp, and `62%` demo probability.
+2. A decode-only Flame draft fixture displays `2,100 sats` and links to the unmerged draft PR.
+3. A mempool.space fee-ambulance simulation displays `4,200 sats` without a network request or invoice.
+4. The Proof of Nonsense newsroom exposes deterministic English and German scripts.
+5. The completed broadcast separates verified telemetry from authorized nonsense and supports replay.
 
-Run it:
+Every integration is visibly marked `FIXTURE`, `DRAFT`, `SIMULATED`, or `READY`. The audio panel remains honestly marked `PENDING` until an approved collaborator asset is supplied.
+
+## Run it
 
 ```bash
+npm install
+npx playwright install chromium
 npm test
 npm run serve
 # open http://127.0.0.1:8080
 ```
 
+`npm test` runs unit, schema-negative, responsive browser, replay, localization, and automated accessibility checks at 390×844 and 1440×900.
+
 ## Component projects
 
-- Proof of Nonsense: https://github.com/murdawkmedia/proof-of-nonsense
 - Flame research implementation: https://github.com/runflame/flame-lib
 - Electrum: https://github.com/spesmilo/electrum
 - mempool.space: https://github.com/mempool/mempool
+- Glimpse: https://www.glimpse.trading/
 
-Paul's verified Electrum Accelerator currently remains a separate local artifact. Its eventual public URL will be added only after publication is authorized.
+The public Proof of Nonsense source URL is temporarily omitted because its previous URL is not currently accessible without authentication. Paul's verified Electrum Accelerator remains a separate local artifact; its public URL will be added only after publication is authorized.
+
+## Fixture and safety contract
+
+The case must pass schema-v2 runtime checks before any stage is rendered. The validator checks every consumed object, string, array, URL, enum, timestamp, integer bound, integration state, and safety flag.
+
+The fixture is rejected unless it is:
+
+- simulated;
+- unsigned;
+- non-paying;
+- non-burning;
+- non-accelerating;
+- the exact allowlisted case ID.
+
+No txid, raw transaction, address, wallet label, seed, xpub, private key, invoice, payment hash, or bearer capability belongs in this repository.
 
 ## Collaboration model
 
-Four collaborators may eventually work across the project: Paul, Murphy, and one assistant/agent for each. Humans remain accountable for external actions. Agents use feature branches and pull requests, disclose generated work, never share credentials, and never perform consequential financial operations without explicit human authorization.
+Humans remain accountable for external actions. Agents use feature branches and pull requests, disclose generated work, never share credentials, and never perform consequential financial operations without explicit human authorization.
 
-See `CONTRIBUTING.md`, `AGENTS.md`, and `PROJECT_STATE.md` before changing anything.
+Read `CONTRIBUTING.md`, `AGENTS.md`, and `PROJECT_STATE.md` before changing anything.
 
 ## Honest award surface
 
-The target story may legitimately demonstrate:
-
-- Bark/Ark/Lightning through the existing Proof of Nonsense checkout;
-- Glimpse through existing probability-market narration;
-- Electrum through the verified Accelerator plugin;
-- mempool.space through its explicit estimate/invoice integration;
-- Flame through a pinned, clearly experimental and read-only draft inspection.
-
-This repository does not claim challenge eligibility merely because a sponsor name appears in the interface. Every final claim must have working evidence.
-
-## Safety line
-
-No real Flame burn. No automatic accelerator payment. No shared wallet identifiers or credentials. No implication that buying a comedy episode authorizes any other financial action.
+The target story may eventually demonstrate Bark/Ark/Lightning, Glimpse, Electrum, mempool.space, and Flame. A sponsor name or local fixture is not proof of a live integration. Every submission claim must identify its evidence state and link a reproducible artifact.
 
 ## Status
 
-Starter collaboration repository and static demo shell. Not submitted, deployed, or endorsed by the component projects.
+The theatrical fixture-backed vertical slice is implemented. It has not been deployed or submitted, and no external financial action has occurred. Live integrations and collaborator-provided audio remain separate follow-up work.

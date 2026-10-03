@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Emergency broadcast flame">
+  <rect width="64" height="64" rx="8" fill="#0a0a0d"/>
+  <path d="M36 7c3 14-8 16-4 27 2-7 8-9 9-17 9 8 13 18 8 29-4 9-13 13-22 10C13 52 9 37 17 27c0 8 4 11 7 12-3-15 8-22 12-32Z" fill="#ff5f49"/>
+  <path d="M34 33c7 7 7 17-1 20-6 2-12-3-11-9 1 3 3 5 6 5-2-7 3-10 6-16Z" fill="#ffd052"/>
+</svg>
